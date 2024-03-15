@@ -12,3 +12,12 @@ Three-step guide to making model changes:
 "python manage.py shell"
 - To invoke the Python shell and use the API Django provides
 - We’re using this instead of simply typing “python”, because manage.py sets the DJANGO_SETTINGS_MODULE environment variable, which gives Django the Python import path to your mysite/settings.py file.
+
+"python manage.py test polls"
+- To run tests in the polls app
+
+"coverage run --source='.' manage.py test myapp"
+- To run coverage to get test coverage
+
+"coverage report"
+- To see a report on the test coverage
